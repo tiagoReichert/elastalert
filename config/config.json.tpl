@@ -13,7 +13,7 @@
     "relative": true,
     "path": "/rule_templates"
   },
-  "es_host": "localhost",
-  "es_port": 9200,
+  "es_host": "{{ES_HOST}}",
+  "es_port": {{ES_PORT}},
   "writeback_index": "elastalert_status"
 }
