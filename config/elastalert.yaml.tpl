@@ -23,7 +23,7 @@ buffer_time:
 #es_url_prefix: elasticsearch
 
 # Connect with TLS to elasticsearch
-#use_ssl: True
+use_ssl: {{ES_SSL}}
 
 # Verify TLS certificates
 #verify_certs: True
@@ -35,8 +35,8 @@ buffer_time:
 #es_send_get_body_as: GET
 
 # Option basic-auth username and password for elasticsearch
-#es_username: someusername
-#es_password: somepassword
+es_username: {{ES_USERNAME}}
+es_password: {{ES_PASSWORD}}
 
 # The index on es_host which is used for metadata storage
 # This can be a unmapped index, but it is recommended that you run
