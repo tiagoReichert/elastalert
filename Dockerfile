@@ -44,7 +44,7 @@ COPY config/elastalert.yaml.tpl /opt/elastalert/config.yaml.tpl
 COPY config/config.json.tpl /opt/elastalert-server/config/config.json.tpl
 COPY rule_templates/ /opt/elastalert/rule_templates
 COPY elastalert_modules/ /opt/elastalert/elastalert_modules
-COPY entrypoint.sh /opt/entrypoint.sh
+COPY ./entrypoint.sh /opt/entrypoint.sh
 RUN chmod +x /opt/entrypoint.sh
 
 EXPOSE 3030
