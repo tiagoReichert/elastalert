@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 sed -ri "s|<ES_HOST>|$ES_HOST|g" /opt/elastalert-server/config/config.json
 sed -ri "s|<ES_PORT>|$ES_PORT|g" /opt/elastalert-server/config/config.json
