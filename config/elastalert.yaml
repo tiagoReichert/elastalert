@@ -26,7 +26,7 @@ buffer_time:
 use_ssl: <ES_SSL>
 
 # Verify TLS certificates
-#verify_certs: True
+verify_certs: <ES_VERIFY_CERT>
 
 # GET request with body is the default option for Elasticsearch.
 # If it fails for some reason, you can pass 'GET', 'POST' or 'source'.
