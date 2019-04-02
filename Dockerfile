@@ -39,9 +39,9 @@ WORKDIR /opt/elastalert-server
 COPY . /opt/elastalert-server
 
 RUN npm install --production --quiet
-COPY config/elastalert.yaml.tpl /opt/elastalert/config.yaml.tpl
+COPY config/elastalert.yaml /opt/elastalert/config.yaml
 #COPY config/elastalert-test.yaml /opt/elastalert/config-test.yaml
-COPY config/config.json.tpl /opt/elastalert-server/config/config.json.tpl
+COPY config/config.json /opt/elastalert-server/config/config.json
 COPY rule_templates/ /opt/elastalert/rule_templates
 COPY elastalert_modules/ /opt/elastalert/elastalert_modules
 COPY config/entrypoint.sh /opt/entrypoint.sh
