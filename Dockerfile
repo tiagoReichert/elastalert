@@ -40,11 +40,12 @@ COPY . /opt/elastalert-server
 
 RUN npm install --production --quiet
 COPY config/elastalert.yaml /opt/elastalert/config.yaml
-#COPY config/elastalert-test.yaml /opt/elastalert/config-test.yaml
+COPY config/elastalert-test.yaml /opt/elastalert/config-test.yaml
 COPY config/config.json /opt/elastalert-server/config/config.json
 COPY rule_templates/ /opt/elastalert/rule_templates
 COPY elastalert_modules/ /opt/elastalert/elastalert_modules
 COPY config/entrypoint.sh /opt/entrypoint.sh
+COPY config/mail_auth.yml /opt/elastalert/mail_auth.yml
 RUN chmod +x /opt/entrypoint.sh
 
 EXPOSE 3030

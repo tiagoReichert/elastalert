@@ -47,3 +47,7 @@ writeback_index: elastalert_status
 # sending the alert until this time period has elapsed
 alert_time_limit:
   days: 2
+
+smtp_host: <SMTP_HOST>
+smtp_port: <SMTP_PORT>
+smtp_auth_file: /opt/elastalert/mail_auth.yml
