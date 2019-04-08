@@ -15,4 +15,6 @@ sed -ri "s|<FROM_ADDRESS>|$FROM_ADDRESS|g" /opt/elastalert/config.yaml
 sed -ri "s|<SMTP_USERNAME>|$SMTP_USERNAME|g" /opt/elastalert/mail_auth.yml
 sed -ri "s|<SMTP_PASSWORD>|$SMTP_PASSWORD|g" /opt/elastalert/mail_auth.yml
 
+cp /opt/elastalert/config.yaml /opt/elastalert/config-test.yaml
+
 npm start
